@@ -1,12 +1,11 @@
-pipeline {
+calendar{
+  def app
 
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                sh 'docker build . -t unvcal'
-                sh 'docker container run -d -p 80:3000 --name unvcal unvcal'
-            }
-        }
-    }
+  stage('Clone Repo'){
+    checkout scm
+  }
+  
+  stage('Build Image') {
+    app = docker.build("axelyates/unvcal")
+  }
 }
