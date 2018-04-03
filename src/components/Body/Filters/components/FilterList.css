@@ -1,0 +1,18 @@
+.filter-item {
+    text-align: left;
+    overflow: auto;
+}
+
+.filter-container {
+    height: 700px;
+}
+
+menu, ol, ul, li {
+    padding: 0;
+    list-style: none;
+}
+
+label {
+    font-size: .9em;
+    padding: 0 10px; 
+}

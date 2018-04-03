@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+/**
+ * Turn off timestamps on the events tabs
+ */
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-event {
+  border-radius: 0px;
+  background-color: #1976D2;
+}
+
+.container {
+  width: 80%;
+}
